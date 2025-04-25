@@ -40,7 +40,7 @@ def process():
     # If summary is requested
     if summary_prompt and summary_service and summary_service in SERVICES:
         combined_responses = "\n\n".join(responses)
-        final_prompt = f"{summary_prompt}\n\n{combined_responses}"
+        final_prompt = f"{summary_prompt}:\n\n{combined_responses}"
         final_response = SERVICES[summary_service](final_prompt)
         # Convert markdown to HTML
         final_response_html = markdown.markdown(final_response)

@@ -69,7 +69,7 @@
 
         <div class="card">
             <div class="card-header">
-                <h5 class="mb-0">Select Services</h5>
+                <h5 class="mb-0">Select LLMs</h5>
             </div>
             <div class="card-body">
                 <div id="serviceCheckboxes">
@@ -87,15 +87,15 @@
 
         <div class="card">
             <div class="card-header">
-                <h5 class="mb-0">Summary Options</h5>
+                <h5 class="mb-0">Summary</h5>
             </div>
             <div class="card-body">
                 <div class="mb-3">
                     <label for="summaryPrompt" class="form-label">Summary Prompt</label>
-                    <textarea id="summaryPrompt" class="form-control" rows="3" placeholder="Enter summary prompt...">Summarize the following response in 14 points:</textarea>
+                    <textarea id="summaryPrompt" class="form-control" rows="1" placeholder="Enter summary prompt...">Summarize the responses in 14 points</textarea>
                 </div>
                 <div class="mb-3">
-                    <label for="summaryService" class="form-label">Select Summary Service</label>
+                    <label for="summaryService" class="form-label">Select LLM</label>
                     <select id="summaryService" class="form-select">
                         <option value="">Select a service...</option>
                         {% for service in services %}
